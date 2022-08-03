@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
+    <link id="theme-style" rel="stylesheet" href="dark.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
 </head>
 <body onload="myFunction()" style="margin:0;">
     <div id="loader"></div>
@@ -52,8 +51,8 @@
                     </h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="dark-mode" class="theme-dot"></div>
-                        <div id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark-mode" id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="light-mode" id="light-mode" class="theme-dot"></div>
                     </div>
                         <p id="settings-note">
                                 Click on the dots to change theme.
@@ -88,7 +87,7 @@
                         About Me
                     </h2>
                     <p>
-                        For many years I was unsure of what I wanted to pursue as a career, I went from being a doctor, to wanting to study biochemistry and from there to chemical engineering and then had a mental tug of war between mechanical and eletrical engineering.
+                        For many years I was unsure of what I wanted to pursue as a career, I went from anting to being a doctor, to wanting to study biochemistry and from there to chemical engineering and then had a mental tug of war between mechanical and eletrical engineering.
                     </p>
                     <p>
                         But suddenly one rainy day I bought a beginners book on python programming and a udemy course and from that day onwards I was convinced that Software Engineering was for me.
@@ -107,7 +106,7 @@
                         </a>
                         <button type="button" class="btn btn-info btn-lg">
                             <i class="fa-solid fa-file-pdf"></i>
-                            <a style="color:white ; text-decoration: none;" target="_blank" href="Osi Obomighie.pdf">Download CV</a>
+                            <a style="text-decoration: none;" target="_blank" href="Osi_Obomighie_CV (1).pdf">Download CV</a>
                         </button>
 
                         <a target="_blank" href="https://www.linkedin.com/in/osiobomighie/">
@@ -356,7 +355,7 @@
                                     Code
                                 </button>
                             </a>
-                            <a class="post-link" href="# target="_blank">
+                            <a class="post-link" href="#" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="fa-solid fa-play"></i>
                                     Live Preview
@@ -372,33 +371,34 @@
 
     <section class="Section1" id="Contact">
         <div class="main-container">
-            <h1>
-                Contact
-            </h1>
+                <!-- <a href=""></a> -->
+                <h3 style="text-align: center;">Get In Touch</h3>
+    
+                <form action="mailto:osiobomighie@outlook.com" id="contact-form" method="post" enctype="text/plain">
+                    <a name="contact"></a>
+    
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name" placeholder="Name" required>
+
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email" placeholder="Email" required>
+    
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject" placeholder="Subject" required>
+
+                    <label>Message</label>
+                    <textarea class="input-field" name="message" placeholder="Send me something..." required></textarea>
+    
+                    <input id="submit-btn" class="btn btn-info" type="submit" value="Send">
+
+                    <input type="hidden" name="_next" value="https://osiobomighie.me/thanks.html">
+                </form>
         </div>
     </section>
     </div>
 
-    <script>
-        var myVar;
-        function myFunction() {
-            myVar = setTimeout(showPage, 2000);
-        }
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
