@@ -307,7 +307,7 @@ ul{
 
 .experience-wrapper .center-line{
     position: absolute;
-    height: 32%;
+    height: 30%;
     width: 4px;
     background: var(--spinnerColor);
     left: 50%;
