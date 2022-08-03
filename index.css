@@ -16,6 +16,7 @@
     --previewShadow:#f0ead6;
 
     --spinnerColor: #15202B;
+    --emailText:black;
 
 }
 
@@ -386,7 +387,7 @@ ul{
 	border-radius: 5px;
 	background-color: var(--previewShadow);
 	margin-bottom: 50px;
-    color: #000;
+    color: var(--emailText);
 
 }
 
@@ -408,6 +409,7 @@ ul{
 	border-radius: 5px;
 	border:1px solid var(--borderColor);
 	font-size: 14px;
+    color: var(--emailText);
 }
 
 
@@ -470,7 +472,7 @@ ul{
 	}
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
 	.intro-wrapper{
 		grid-template-columns: 1fr;
 		grid-template-areas: 
