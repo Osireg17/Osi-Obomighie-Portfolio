@@ -315,6 +315,12 @@ ul{
     transform: translateX(-50%);
 }
 
+.Tech {
+    
+    display: inline-block;
+    
+  }
+
 
 .row section .details,
 .row section .bottom{
