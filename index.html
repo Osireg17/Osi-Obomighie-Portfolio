@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
 </head>
 <body onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
+    <span id="loader"></span>
     <div style="display: none;" id="myDiv" class="animate-bottom">
 
-        
-    <section class="Section1">
+    <main>
+    <section class="section Section1">
         <div  class="main-container">
             <div class="greeting-wrapper">
                 <h1>
@@ -68,7 +68,7 @@
                                 Who am I ?
                             </h3>
                             <p>
-                                I am a systems engineering undergraduate at the University of Warwick aspiring to become a full-stack engineer
+                                I am a Systems Engineering undergraduate at the University of Warwick aspiring to become a Software Engineer
                             </p>
                             <div class="corner" id="corner-bl"></div>
                             <div class="corner" id="corner-br"></div>
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <section class="Section2" id="About">
+    <section class="section Section2" id="About">
         <div class="main-container">
             <div class="about-wrapper">
                 <div class="about-me">
@@ -101,14 +101,13 @@
                     <div class="buttons">
                         <a target="_blank" href="https://github.com/Osireg17">
                             <button type="button" class="btn btn-info btn-lg">
-                                
                                 <i class="devicon-github-original"></i>
                                 Github
                             </button>
                         </a>
                         <button type="button" class="btn btn-info btn-lg">
                             <i class="fa-solid fa-file-pdf"></i>
-                            <a style="text-decoration: none; color: white;" target="_blank" href="Osi Obomighie.pdf">Download CV</a>
+                            <a style="text-decoration: none; color: white;" target="_blank" href="Osiregbemhe Obomighie.pdf">Download CV</a>
                         </button>
 
                         <a target="_blank" href="https://www.linkedin.com/in/osiobomighie/">
@@ -200,11 +199,53 @@
         </div>
     </section>
 
-    <section class="Section1" id="Experience">
+    <section class="section Section1" id="Experience">
         <div class="main-container">
             <div class="experience-wrapper">
                 <h5>Experience</h5>
                 <div class="center-line"></div>
+
+                <div class="row row-2">
+                    <section>
+                        <div class="details">
+                            <span class="title">
+                                <strong>Hewlett Packard Enterprise</strong>
+                            </span>
+                            
+                            <span>
+                                July 2023 - June 2024
+                            </span>
+                        </div>
+                        <h6>Incoming Software Engineer Intern <h6>
+                        <p>
+                            I will be joining HPE next summer as a Software Engineer Intern.
+                        </p>
+                        
+                    </section>
+                </div>
+
+                <div class="row row-1">
+                    <section>
+                        <div class="details">
+                            <span class="title">
+                                <strong>Butterfly</strong>
+                            </span>
+                            
+                            <span>
+                                October 2022 - Present
+                            </span>
+                        </div>
+                        <h6>Software Engineer </h6>
+                        <p>
+                            I am currently working as a Software Engineer at Butterfly, a startup that is developing a social media platform for students to connect with each other and share their experiences.
+                            The app is currently only avaiable to Warwick University students but will be rolled out to other universities in the future.
+                        </p>
+                        <a class="link"  target="_blank" href="https://play.google.com/store/apps/details?id=com.butterflysocial.butterfly&gl=US&pli=1">Butterfly</a>
+                        
+                    </section>
+                </div>
+
+                
 
                 <div class="row row-2">
                     <section>
@@ -303,7 +344,7 @@
         </div>
     </section>
 
-    <section class="Section2" id="Projects">
+    <section class="section Section2" id="Projects">
         <div class="main-container">
             <h3 style="text-align: center;">Projects</h3>
             <div class="post-wrapper">
@@ -314,7 +355,10 @@
 						<div class="post-preview">
 							<h6 class="post-title">Cash Cow</h6>
 							<p class="post-intro">Designed an application to display the current price of popular crypto currencies. The application was built using React and the CoinGecko API.</p>
-                            </p>
+                            <div>
+                                <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>                
+                                <i class="devicon-react-original colored" style="font-size: 2rem;"></i>          
+                            </div> 
 							<a class="post-link" href="https://github.com/Osireg17/CashCow" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="devicon-github-original"></i>
@@ -337,7 +381,12 @@
 						<div class="post-preview">
 							<h6 class="post-title">Naruto Notions</h6>
 							<p class="post-intro">Designed a full-stack blog application, using bootstrap for the frontend and Node/ExpressJs for the backend and MongoDB Atlas for the database</p>
-                            </p>
+                            <div>
+                                <i class="devicon-nodejs-plain colored" style="font-size: 2rem;"></i>
+                                <i class="devicon-mongodb-plain colored" style="font-size: 2rem;"></i>           
+                                <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 2rem;"></i>
+                                <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>
+                            </div>  
 							<a class="post-link" href="https://github.com/Osireg17/CRUD-Blog-Application" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="devicon-github-original"></i>
@@ -359,7 +408,10 @@
 						<div class="post-preview">
 							<h6 class="post-title">Wordle Clone</h6>
 							<p class="post-intro">A clone of the popular New York Times game Wordle. I built this using Javascript and the Word API. Used AnimateJs to make each letter entered bounce in.</p>
-                            </p>
+                            <div>
+                                <i class="devicon-javascript-plain colored" style="font-size: 2rem;"></i>                
+                                <i class="devicon-react-original colored" style="font-size: 2rem;"></i>          
+                            </div> 
 							<a class="post-link" href="https://github.com/Osireg17/Sorting-Algorithm-Visualizer" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="devicon-github-original"></i>
@@ -381,6 +433,9 @@
 						<div class="post-preview">
 							<h6 class="post-title">Sorting Algorithm Visualiser</h6>
 							<p class="post-intro">I built this Algorithm Visualiser to help me understand the different sorting algorithms when I was learning data structures and algorithms</p>
+                            <div>         
+                                <i class="devicon-python-plain colored" style="font-size: 2rem;"></i>
+                            </div> 
                             </p>
 							<a class="post-link" href="https://github.com/Osireg17/Sorting-Algorithm-Visualizer" target="_blank">
                                 <button class="btn btn-info">
@@ -400,18 +455,23 @@
 
                 <div>
 					<div class="post">
-						<img class="thumbnail" src="Portfolio_Images/puzzle-sudoku.png">
+						<img class="thumbnail" src="Portfolio_Images/Chat-App.webp">
 						<div class="post-preview">
-							<h6 class="post-title">Sudoku Solver</h6>
-							<p class="post-intro">To better understand Dynamic Programming and Recursion, I took upon myself to develop a python program that solves sudoku boards using backtracking</p>
-                            </p>
-							<a class="post-link" href="https://github.com/Osireg17/Sudoku-Solver" target="_blank">
+							<h6 class="post-title">Chat Application...(In Production)</h6>
+							<p class="post-intro">Decided to build a fullstack chat application to improve my skills in fullstack development by using diiferent tech stacks</p>
+                            <div>       
+                                <i class="devicon-react-original colored" style="font-size: 2rem;"></i> 
+                                <i class="devicon-typescript-plain colored" style="font-size: 2rem;"></i>
+                                <i class="devicon-nodejs-plain colored" style="font-size: 2rem;"></i>                               
+                                <i class="devicon-graphql-plain colored" style="font-size: 2rem;"></i>
+                                <i class="devicon-mysql-plain colored" style="font-size: 2rem;"></i>
+                            </div> 
+							<a class="post-link" href="https://github.com/Osireg17/Chat-Application" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="devicon-github-original"></i>
                                     Code
                                 </button>
                             </a>
-                            
 						</div>
 					</div>
 				</div>
@@ -422,7 +482,11 @@
 						<div class="post-preview">
 							<h6 class="post-title">NBA Face Smash</h6>
 							<p class="post-intro">To better understand OpenCV for a group project, I decided to make a small program that can identify different NBA players</p>
-                            </p>
+                            <div>       
+                                    <i class="devicon-python-plain colored" style="font-size: 2rem;"></i>
+                                    <i class="devicon-opencv-plain colored" style="font-size: 2rem;"></i>
+          
+                            </div> 
 							<a class="post-link" href="https://github.com/Osireg17/Facial-Recognition" target="_blank">
                                 <button class="btn btn-info">
                                     <i class="devicon-github-original"></i>
@@ -432,11 +496,35 @@
 						</div>
 					</div>
 				</div>
+
+                <div>
+					<div class="post">
+						<img class="thumbnail" src="Portfolio_Images/Vivy.webp">
+						<div class="post-preview">
+							<h6 class="post-title">Vivy: Fluorite Eye's Song</h6>
+							<p class="post-intro">As part of my interest in machine learning, I built a chatbot that will answer basic questions. It also answers questions on the Anime it is based off</p>
+                            <div>       
+                                    <i class="devicon-python-plain colored" style="font-size: 2rem;"></i>
+                                    <i class="devicon-tensorflow-original colored" style="font-size: 2rem;"></i>                            
+                                    <i class="devicon-pytorch-original colored" style="font-size: 2rem;"></i>                                  
+                                    <i class="devicon-flask-original colored" style="font-size: 2rem;"></i>
+                                    <i class="devicon-bootstrap-plain-wordmark colored" style="font-size: 2rem;"></i>
+                            </div> 
+							<a class="post-link" href="#" target="_blank">
+                                <button class="btn btn-info">
+                                    <i class="devicon-github-original"></i>
+                                    Code
+                                </button>
+                            </a>
+						</div>
+					</div>
+				</div>
+                
 				
             </div>
     </section>
 
-    <section class="Section1" id="Contact">
+    <section class="section Section1" id="Contact">
         <div class="main-container">
                 <!-- <a href=""></a> -->
                 <h3 style="text-align: center;">Get In Touch</h3>
@@ -462,6 +550,7 @@
                 </form>
         </div>
     </section>
+    </main>
     </div>
 
     

@@ -287,12 +287,12 @@ ul{
 }
 
 .experience-wrapper .row section {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
     background: var(--previewShadow);
     border-radius: 5px;
-    width: calc(50% - 40px);
-    padding: 20px;
+    width: calc(50% - 50px);
+    padding: 30px;
     position: relative;
     cursor: pointer;
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -301,18 +301,18 @@ ul{
 }
 
 .experience-wrapper .row section:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 
 
 .experience-wrapper .center-line{
     position: absolute;
-    height: 32%;
-    width: 4px;
+    height: 35%;
+    width: 2px;
     background: var(--spinnerColor);
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
 }
 
 .Tech {
@@ -338,6 +338,7 @@ ul{
 
 .row section p{
     margin: 10px 0 17px 0;
+    font-size: 1.1rem;
 }
 
 .post-wrapper{
@@ -537,4 +538,25 @@ ul{
   }
 
 
-    
+  @media (min-height: 30em) {
+    .section__content > * {
+      opacity: 0;
+      transform: translate3d(0, 4rem, 0);
+      transition: opacity 800ms var(--delay),
+        transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay);
+    }
+  }
+  
+  .is-visible .section__content > * {
+    opacity: 1;
+    transform: translate3d(0, 1rem, 0);
+  }
+  .is-visible .section__img {
+    opacity: 0.75;
+  }
+
+.project-technology{
+    text-align: center;
+    font-size: 10px;
+    color: var(--mainColor);
+}
