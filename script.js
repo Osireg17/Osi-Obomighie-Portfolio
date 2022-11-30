@@ -28,6 +28,10 @@ function setTheme(mode){
 		document.getElementById('theme-style').href = 'dark.css'
 	}
 
+    if(mode == 'brown-mode'){
+        document.getElementById('theme-style').href = 'brown.css'
+    }
+
 	
 
 	localStorage.setItem('theme', mode)
@@ -49,6 +53,7 @@ var myVar;
 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
+                    
                 });
             });
         });

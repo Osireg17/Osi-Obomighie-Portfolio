@@ -1,0 +1,23 @@
+:root{
+	--mainColor:#eab676;
+	--secondColor:#cda577;
+
+	--borderColor:#cda577;
+
+	--mainText:#000;
+	--secondText:#000;
+
+	--themeDotBorder:#eab676;
+
+	--previewBg:rgba(150, 121, 88, 0.8);
+	--previewShadow:#cda577;
+
+
+	--buttonColor:#000000;
+    --mainFont: 'Quicksand', sans-serif;
+
+	--spinnerColor:#eaeaea;
+	--emailText:black;
+
+
+}
